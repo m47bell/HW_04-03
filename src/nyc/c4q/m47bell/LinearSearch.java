@@ -15,14 +15,16 @@ import java.util.Scanner;
  */
 public class LinearSearch {
 
-
-
+    // static method search which accepts as
+   // input an ArrayList alist and an integer x
     public static Integer search(ArrayList<Integer> alist, int x) {
 
+        // if integer x is found in array list alist, return index
         if (alist.contains(x)) {
 
             return alist.indexOf(x);
 
+        // if not found, return -1
         } else {
 
             return -1;
@@ -33,6 +35,7 @@ public class LinearSearch {
 
     public static void main(String[] args) {
 
+        //made HW example list
         ArrayList<Integer> alist = new ArrayList<Integer>();
         //Eg. 3, 45, 1, 2, 99
         alist.add(3);
@@ -49,7 +52,7 @@ public class LinearSearch {
 
         int x = input.nextInt();
 
-
+        // return value based on the search method output
         System.out.println("Returns: " + search(alist,x));
 
 
