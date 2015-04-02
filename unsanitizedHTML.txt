@@ -1,0 +1,895 @@
+
+<!doctype html>
+<!--[if IE 7]> <html class="no-js oldie ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/BlogPosting"> <!--<![endif]-->
+<head>
+	<script> var TNY = TNY || {}; TNY.dynamicVariables = TNY.dynamicVariables || {}; TNY.dynamicVariables.additionalBannerScroll = 200; TNY.dynamicVariables.timeToUnstick = 1500; </script>
+    <script>
+
+    var TNY = TNY || {};
+
+
+
+            TNY.meterVar = {
+              'meter_name'  : 'ggl',
+              'meter_count'  : '1',
+              'meter_max'    : '5',
+              'meter_viewed' : 'true',
+              'num'          : '3',
+              'pid'          : '',
+              'entitlement'  : ''
+            }
+
+
+
+
+
+      if(TNY.meterVar == undefined){
+          TNY.meterVar = {
+              'meter_name'   : '',
+              'meter_count'  : '',
+              'meter_max'    : '',
+              'meter_viewed' : '',
+              'num'          : '',
+              'pid'          : '',
+              'entitlement'  : ''
+          }
+      }
+        TNY.meterVar.isBarrierFull = false;
+
+
+
+
+      if(TNY.meterVar == undefined){
+          TNY.meterVar = {
+              'meter_name'   : '',
+              'meter_count'  : '',
+              'meter_max'    : '',
+              'meter_viewed' : '',
+              'num'          : '',
+              'pid'          : '',
+              'entitlement'  : ''
+          }
+      }
+        TNY.meterVar.isBarrierHalf = false;
+
+    </script>
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUFVlRbGwcDV1ZRBwQ="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:20,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(3),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(4),t(5),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:8,3:3,4:7,5:6,6:21,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:21,2:22,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:22,2:21,ee:"QJf3ax"}],7:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:22,2:21,ee:"QJf3ax"}],8:[function(t,e){function n(){u.inPlace(this,p,"fn-")}function r(t,e){u.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),u=c(a),f=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,u.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:5,2:22,ee:"QJf3ax"}],9:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=n(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=n(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var f=0;c>f;f++)e.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:10,3:8,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],10:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],11:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:20,2:21,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===f.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=u.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),u=c.document,f=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:f,features:{}};u.addEventListener?(u.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(u.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:20,2:11,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],20:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],21:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],22:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:21,ee:"QJf3ax"}]},{},["G9z0Bl",4,9]);</script>
+
+
+	<meta itemprop="name" content="An Open Letter to Wikipedia"><meta itemprop="publisher" content="The New Yorker" itemtype="http://schema.org/Organization">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+-->
+<!-- minimal-ui=1 -->
+<meta name="HandheldFriendly" content="true">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="The New Yorker">
+<meta name="environment" content="prod">
+<meta name="id" content="1982581">
+
+<link rel="shortcut icon" href="/wp-content/assets/dist/img/icon/favicon.ico">
+
+<link rel="apple-touch-icon" href="/wp-content/assets/dist/img/icon/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/wp-content/assets/dist/img/icon/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/wp-content/assets/dist/img/icon/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/assets/dist/img/icon/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/assets/dist/img/icon/apple-touch-icon-144x144-precomposed.png">
+
+<meta property="fb:admins" content="501890909,757909316">
+<meta name="google-site-verification" content="_jvLA9pRQom0-f6587wRKrNwfRtqyKzjfYWvwcZ5fxc">
+
+<link rel="stylesheet" href="/wp-content/assets/dist/css/core.min.css?cb=20150402205438">
+<script src="//use.typekit.net/wth6gwt.js"></script>
+<script>try{Typekit.load();}catch(e){};</script>
+
+<link rel="dns-prefetch" href="//stats2.newyorker.com" /><link rel="dns-prefetch" href="//sstats.newyorker.com" />
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>An Open Letter to Wikipedia - The New Yorker</title>
+<link rel="canonical" href="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" />
+<link rel="publisher" href="https://plus.google.com/+newyorker"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="An Open Letter to Wikipedia - The New Yorker" />
+<meta property="og:description" content="Dear Wikipedia, I am Philip Roth. I had reason recently to read for the first time the Wikipedia entry discussing my novel &#8220;The Human Stain.&#8221; The entry contains a serious misstatement that I would like to ask to have removed. This item entered Wikipedia not from the world of truthfulness but from the babble of literary gossip&#8212;there is no truth in it at all. Yet when, through an official interlocutor, I recently petitioned Wikipedia to delete this misstatement, along with two others, my interlocutor was told by the &#8220;English Wikipedia Administrator&#8221;&#8212;in a letter dated August 25th and addressed to my interlocutor&#8212;that I, Roth, was not a credible source: &#8220;I understand your point that the author is the greatest authority on their own work,&#8221; writes the Wikipedia Administrator&#8212;&#8220;but we require secondary sources.&#8221;" />
+<meta property="og:url" content="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" />
+<meta property="og:site_name" content="The New Yorker" />
+<meta property="article:tag" content="Anatole Broyard,Philip Roth,The Human Stain" />
+<meta property="article:section" content="Page-Turner" />
+<meta property="article:published_time" content="2012-09-06T13:53:24+00:00" />
+<meta property="article:modified_time" content="2014-07-16T22:21:26+00:00" />
+<meta property="og:updated_time" content="2014-07-16T22:21:26+00:00" />
+<meta property="og:image" content="http://www.newyorker.com/wp-content/uploads/2012/09/philip-roth-af.jpg" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:description" content="Dear Wikipedia, I am Philip Roth. I had reason recently to read for the first time the Wikipedia entry discussing my novel &#8220;The Human Stain.&#8221; The entry contains a serious misstatement that I would like to ask to have removed. This item entered Wikipedia not from the world of truthfulness but from the babble of literary gossip&#8212;there is no truth in it at all. Yet when, through an official interlocutor, I recently petitioned Wikipedia to delete this misstatement, along with two others, my interlocutor was told by the &#8220;English Wikipedia Administrator&#8221;&#8212;in a letter dated August 25th and addressed to my interlocutor&#8212;that I, Roth, was not a credible source: &#8220;I understand your point that the author is the greatest authority on their own work,&#8221; writes the Wikipedia Administrator&#8212;&#8220;but we require secondary sources.&#8221;       "/>
+<meta name="twitter:title" content="An Open Letter to Wikipedia - The New Yorker"/>
+<meta name="twitter:site" content="@newyorker"/>
+<meta name="twitter:domain" content="The New Yorker"/>
+<meta name="twitter:image:src" content="http://www.newyorker.com/wp-content/uploads/2012/09/philip-roth-af.jpg"/>
+<meta name="twitter:creator" content="@newyorker"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel='shortlink' href='http://www.newyorker.com/?p=1982581' />
+<meta name="news_keywords" content="Anatole Broyard, Philip Roth, The Human Stain"><!-- BEGIN wp-parsely Plugin Version 1.7 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.7' />
+<script type="application/ld+json">
+{"title":"An Open Letter to Wikipedia","link":"http:\/\/www.newyorker.com\/books\/page-turner\/an-open-letter-to-wikipedia","image_url":"http:\/\/www.newyorker.com\/wp-content\/uploads\/2012\/09\/philip-roth-af-233-240.jpg","type":"post","post_id":"1982581","pub_date":"2012-09-06T13:53:24Z","section":"Page-Turner","author":["Philip Roth"],"tags":["anatole broyard","philip roth","the human stain","post_type: post"]}
+</script>
+<meta name='parsely-metadata' id='parsely-metadata' content='{"id":"1982581","title_alt":"An Open Letter to Wikipedia"}' />
+
+		<style type="text/css">
+			body.customize-support #hd.collapsed #nav-container {
+				margin-top: 28px;
+			}
+		</style>
+<!-- End link subscription -->	</head>
+<body>
+	<nav role="navigation" class="mobile-nav">
+  <ul class="nav-links" >
+          	<li id="subscribe" class="mobile-subscribe">
+  		<div id="AMS_NYR_MOBILE_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a></div>  		<div id="AMS_NYR_TABLET_GLOBAL_SUBNAV" class="ecom-placement"><a class="failsafe" title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/mobilefailsafe">Subscribe</a></div>    </li>
+    <li class="menu-item sub-nav mob-sign-in block-list user-ln-status-mobi">
+      <a id="user-sign-in" class="mobi-sign-in-button" title="Sign in to your account">Sign In</a>
+      <span id="mobi-nav-link" class="link-sub-hamnav"> Link your subscription</span>
+    </li>
+  	<li id="mobi-account-link-1" class="menu-item sub-nav hiddenMobiMenu"></li>
+  	<li id="mobi-account-link-2" class="menu-item sub-nav hiddenMobiMenu"></li>
+  </ul>
+</nav>
+  <div class="page-container">
+
+
+<div class="fix-fixed"><!-- Fixed --></div>
+<div class="header-wrapper">
+	<header id="hd" role="banner" class="viewed-topbanner">
+
+
+<section class="logo-container">
+  <span title="" id="mobile-nav" class="icon-menu"></span>
+
+      <div class="subscribe-links">
+      <div id="AMS_NYR_GLOBAL_HEADER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img alt="Cover of current issue" src="/wp-content/assets/dist/img/px.gif" data-src-desktop="//subscribe.condenet.com/images_covers/cover_newyorker_80.jpg"></a></div><div id="AMS_NYR_GLOBAL_HEADERCALLOUT" class="ecom-placement"><img src="/wp-content/assets/dist/img/px.gif" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYT_global_headercallout_150x110.png" usemap="#GLOBAL_HEADERCALLOUT_MAP" width="150" height="110" alt="Subscribe now"><map id="GLOBAL_HEADERCALLOUT_MAP" name="GLOBAL_HEADERCALLOUT_MAP"><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="1,12,76,107" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe Now" coords="78,12,147,40" href="http://www.newyorker.com/go/failsafe" target="_blank" /><area shape="rect" title="Renew your Subscription" alt="Renew your Subscription to the New Yorker magazine" coords="78,42,147,56" href="https://w1.buysub.com/pubs/N3/NYR/login.jsp?cds_page_id=135517&amp;cds_mag_code=NYR" target="_blank" /><area shape="rect" title="Give a Gift Subscription" alt="Give a Subscription to The New Yorker as a Gift" coords="78,58,147,75" href="http://www.newyorker.com/go/giftfailsafe" target="_blank" /><area shape="rect" title="Subscribe Now" alt="Subscribe to The New Yorker outside the USA" coords="78,77,147,107" href="http://www.newyorker.com/go/internationalfailsafe" target="_blank" /></map></div>    </div>
+
+  <div id="logo">
+    <a href="http://www.newyorker.com" title="The New Yorker"><h1>The New Yorker</h1></a>
+  </div>
+  <div class="social-and-user-links">
+    <ul class="user-info">
+      <span id="sign_in" class="user-ln-status">
+
+      <li id="sign-in-list" class="demo-link big plain"><span data-type="sign-in" class="header-nav-link" id="sign-in" title="Sign in to your account">
+      <span id="fallback-signin-link" class="nyer-plain-lnk">
+      Sign in       </span></span>
+       </li>
+      <li class="demo-link big plain"></li>
+      <li id="link-sub-nav" class="nyer-plain-lnk nav-menu">Link your subscription</li>
+      </span>
+      <li class="n-store"><a href="http://www.condenaststore.com/~/new-yorker-store?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=SHOP&amp;AID=1247905545" target="_blank" title="The New Yorker Store">TNY Store</a></li>
+      <li class="demo-link big plain"><span id="sign-out-wrapper" class="big plain"></span></li>
+    </ul>
+    <ul class="social-menu">
+      <li class="facebook"><a href="https://facebook.com/newyorker" title="Facebook">F</a></li>
+      <li class="twitter"><a href="https://twitter.com/newyorker" title="Twitter">T</a></li>
+      <li class="google-plus"><a href="https://plus.google.com/+newyorker/posts" title="Google+">G+</a></li>
+    </ul>
+  </div>
+</section>
+<nav role="navigation" class="primary-nav">
+  <ul>
+    <li class="main-item tny-nav-icon">
+      <a href="http://www.newyorker.com/">Home</a>
+    </li>
+    <li class="tny-nav-news menu-item"><a href="http://www.newyorker.com/news">News</a></li>
+<li class="tny-nav-culture menu-item"><a href="http://www.newyorker.com/culture">Culture</a></li>
+<li class="tny-nav-books menu-item"><a href="http://www.newyorker.com/books">Books &#038; Fiction</a></li>
+<li class="tny-nav-tech menu-item"><a href="http://www.newyorker.com/tech">Science &#038; Tech</a></li>
+<li class="menu-item"><a href="http://www.newyorker.com/business">Business</a></li>
+<li class="tny-nav-humor menu-item"><a href="http://www.newyorker.com/humor">Humor</a></li>
+<li class="tny-nav-magazine menu-item"><a href="http://www.newyorker.com/magazine">Magazine</a></li>
+<li class="menu-item"><a href="http://video.newyorker.com/">Video</a></li>
+<li class="tny-nav-archive menu-item"><a href="http://www.newyorker.com/archive">Archive</a></li>
+    <li id="subscribe">
+    <div id="AMS_NYR_GLOBAL_NAVBAR" class="ecom-placement"><a title="Subscribe to The New Yorker" target="_blank" href="http://www.newyorker.com/go/failsafe">Subscribe</a></div>      <div id="subscribe-rollover">
+        <div class="subscribe-links-wrapper">
+          <div id="AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement"><img rel="nofollow" src="/wp-content/assets/dist/img/px.gif" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_NavBarRollover_Redesign_300x200.jpg" usemap="#GLOBAL_NAVBAR_ROLLOVER_MAP" width="300" height="200" alt="Subscribe to The New Yorker" /><map id="GLOBAL_NAVBAR_ROLLOVER_MAP" name="GLOBAL_NAVBAR_ROLLOVER_MAP"><area shape="rect" coords="0,249,75,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeGift" alt="Give a Gift" target="_blank" /><area shape="rect" coords="76,249,203,286" href="https://w1.buysub.com/loc/NYR/ATGFailsafeInt" alt="International Orders" target="_blank" /><area shape="rect" coords="0,0,399,249" href="http://www.newyorker.com/go/failsafe" alt="Subscribe to The New Yorker" target="_blank" /><area shape="rect" coords="203,249,399,290" href="http://www.newyorker.com/go/failsafe" alt="Order Now" target="_blank" /></map></div>        </div>
+      </div>
+        </li>
+      <div id="navSearch" class="navSearch nav-search-container">
+	<form method="get" action="http://www.newyorker.com/search">
+		<input type="text" name="q" placeholder="Search The New Yorker" />
+		<input type="submit" value="Submit Search" />
+	</form>
+</div>     <li class="tny-nav-search"><a href="http://www.newyorker.com/search" title="Search" id="search-toggle" class="search-toggle bignav-search">Search</a></li>
+
+  </ul>
+  <div class="floatingAd-wrapper"><div id="floatingAd" style="display:none;">  <div id="floatingAd_content">    <div id="AMS_NYR_POPUP_FLOATINGAD" class="ecom-placement">    </div>    <div id="floatingAd_header"><a href="javascript:void(0)" class="close">Close</a></div>  </div></div></div>
+</nav>
+	</header>
+</div>
+
+    <div class="content-wrapper">
+		<div id="main" role="main" class="single-post single-blog post- tax-page-turner tax-Page-Turner tax-http://www.newyorker.com/books/page-turner ">
+
+	<div class="header-ad"><div class="advertisement"><div id="header728x90_frame" class="displayAd displayAd728x90Js" data-cb-ad-id="header728x90_frame"></div></div><div class="advertisement"><div id="header_mobile320x50_frame" class="displayAd displayAd320x50Js" data-cb-ad-id="header_mobile320x50_frame"></div></div></div>
+
+		<article itemscope itemtype="http://schema.org/Article" data-details='{"title":"An Open Letter to Wikipedia","author":[771221,"Philip Roth","http:\/\/www.newyorker.com\/contributors\/philip-roth"],"wordCount":2841,"paragraphCount":33}'>
+			<meta itemprop="url" content="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" />
+			<meta itemprop="wordCount" content="2685" />
+			<header id="page-header">
+				<div class="section-info">
+											<figure>
+							<a href="http://www.newyorker.com/books/page-turner" title="Page-Turner" itemprop="articleSection">
+								<img src="/wp-content/assets/dist/img/header_graphics/blog/page-turner.png" alt="Page-Turner" />
+							</a>
+						</figure>
+										<h4><a href="http://www.newyorker.com/books/page-turner" title="Page-Turner" itemprop="articleSection">Page-Turner</a></h4>
+				</div>
+
+				<hgroup id="masthead">
+					<span class="timestamp "> <time datetime="20120906" itemprop="datePublished" content="2012-09-06">September 6, 2012</time></span>
+
+					<h1 itemprop="name">An Open Letter to Wikipedia</h1>
+
+					<h3>By <span itemscope itemprop="author" itemtype="http://schema.org/Person"><meta itemprop="url" content="http://www.newyorker.com/contributors/philip-roth" ><a href="http://www.newyorker.com/contributors/philip-roth" title="Philip Roth" rel="author" itemprop="url"><span itemprop="name">Philip Roth</span></a></span></h3>
+
+    <nav class="social-buttons"><ul><li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" data-type="button"></div></li>
+<li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" data-text="An Open Letter to Wikipedia" data-via="newyorker" data-dnt="true"></a></li>
+<li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia"></div></li>
+<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: An%20Open%20Letter%20to%20Wikipedia&amp;body=  Dear Wikipedia,  I am Philip Roth. I had reason recently to read for the first time the Wikipedia entry discussing my novel &#8220;The Human Stain.&#8221; The entry contains a serious misstatement that I would like to ask to have removed. This item entered Wikipedia...%0A%0AContinue reading at http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png" alt="Email"/></a></li>
+<li class="share-print"><a href="javascript:window.print();"><img src="/wp-content/assets/dist/img/icon/printer.png" alt="Print"/></a></li>
+</ul></nav></nav>
+				</hgroup>
+			</header>
+
+			<div class="module-container-rail non-solid-rail">
+				<div class="module-container-stacked post-content">
+					<div itemprop="articleBody" class="articleBody" id="articleBody">
+
+												<figure class="vertical attachment-medium portrait featured">
+							<a href="http://www.newyorker.com/wp-content/uploads/2012/09/philip-roth-af.jpg" title="An Open Letter to Wikipedia" itemprop="url">
+								<img itemprop="image" src="http://www.newyorker.com/wp-content/uploads/2012/09/philip-roth-af.jpg" data-src="http://www.newyorker.com/wp-content/uploads/2012/09/philip-roth-af.jpg"  class="post-load vertical attachment-medium" alt="">							</a>
+
+													</figure>
+
+
+<span data-attr="1" data-ma="5" data-bt="ALLOW_ACCESS" data-rv="true" data-sub=""></span>
+
+
+
+
+
+      <a class="tny-slot" name="/2" data-total-words="0"></a><a class="tny-page" name="/1" data-total-words="0"></a><p word_count="2">Dear Wikipedia,</p> <p word_count="63">I am Philip Roth. I had reason recently to read for the first time <a href="http://en.wikipedia.org/wiki/The_Human_Stain" target="_blank">the Wikipedia entry</a> discussing my novel &#8220;The Human Stain.&#8221; The entry contains a serious misstatement that I would like to ask to have removed. This item entered Wikipedia not from the world of truthfulness but from the babble of literary gossip&#8212;there is no truth in it at all.</p><div class="content-ad-wrapper first"><div class="advertisement"><div id="yrailTop300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailTop300x250_frame"></div><div id="yrailTop320x251_frame" class="displayAd displayAd320x251Js" data-cb-ad-id="yrailTop300x250_frame"></div></div></div> <p word_count="70">Yet when, through an official interlocutor, I recently petitioned Wikipedia to delete this misstatement, along with two others, my interlocutor was told by the &#8220;English Wikipedia Administrator&#8221;&#8212;in a letter dated August 25th and addressed to my interlocutor&#8212;that I, Roth, was not a credible source: &#8220;I understand your point that the author is the greatest authority on their own work,&#8221; writes the Wikipedia Administrator&#8212;&#8220;but we require secondary sources.&#8221;</p> <p word_count="0">      <span id="more-1982581"></span> <p word_count="28">Thus was created the occasion for this open letter. After failing to get a change made through the usual channels, I don&#8217;t know how else to proceed.</p> <p word_count="38">My novel &#8220;The Human Stain&#8221; was described in the entry as &#8220;allegedly inspired by the life of the writer Anatole Broyard.&#8221; (The precise language has since been altered by Wikipedia&#8217;s collaborative editing, but this falsity still stands.)</p> <p word_count="102">This alleged allegation is in no way substantiated by fact. &#8220;The Human Stain&#8221; was inspired, rather, by an unhappy event in the life of my late friend Melvin Tumin, professor of sociology at Princeton for some thirty years. One day in the fall of 1985, while Mel, who was meticulous in all things large and small, was meticulously taking the roll in a sociology class, he noted that two of his students had as yet not attended a single class session or attempted to meet with him to explain their failure to appear, though it was by then the middle of the semester. </p> <p word_count="53">Having finished taking the roll, Mel queried the class about these two students whom he had never met. &#8220;Does anyone know these people? Do they exist or are they spooks?&#8221;&#8212;unfortunately, the very words that Coleman Silk, the protagonist of &#8220;The Human Stain,&#8221; asks of his classics class at Athena College in Massachusetts.</p> <p word_count="92">Almost immediately Mel was summoned by university authorities to justify his use of the word &#8220;spooks,&#8221; since the two missing students, as it happened, were both African-American, and &#8220;spooks&#8221; at one time in America was a pejorative designation for blacks, spoken venom milder than &#8220;nigger&#8221; but intentionally degrading nonetheless. A witch hunt ensued during the following months from which Professor Tumin&#8212;rather like Professor Silk in &#8220;The Human Stain&#8221;&#8212;emerged blameless but only after he had to provide a number of lengthy depositions declaring himself innocent of the charge of hate speech. </p> <p word_count="95">A myriad of ironies, comical and grave, abounded, as Mel had first come to nationwide prominence among sociologists, urban organizers, civil-rights activists, and liberal politicians with the 1959 publication of his groundbreaking sociological study &#8220;Desegregation: Resistance and Readiness,&#8221; and then, in 1967, with &#8220;Social Stratification: The Forms and Functions of Inequality,&#8221; which soon became a standard sociological text. Moreover, before coming to Princeton, he had been director of the Mayor&#8217;s Commission on Race Relations, in Detroit. Upon his death, in 1995, the headline above his New York <i>Times </i>obituary read &#8220;<small>MELVIN M. TUMIN, 75, SPECIALIST IN RACE RELATIONS</small>.&#8221;</p> <p word_count="41">But none of these credentials counted for much when the powers of the moment sought to take down Professor Tumin from his high academic post for no reason at all, much as Professor Silk is taken down in &#8220;The Human Stain.&#8221;</p> <p word_count="79">And it is <i>this </i>that inspired me to write &#8220;The Human Stain&#8221;: not something that may or may not have happened in the Manhattan life of the cosmopolitan literary figure Anatole Broyard but what actually did happen in the life of Professor Melvin Tumin, sixty miles south of Manhattan in the college town of Princeton, New Jersey, where I had met Mel, his wife, Sylvia, and his two sons when I was Princeton&#8217;s writer-in-residence in the early nineteen-sixties.</p> <p word_count="80">As with the distinguished academic career of the main character of &#8220;The Human Stain,&#8221; Mel&#8217;s career, having extended for over forty years as a scholar and a teacher, was besmirched overnight because of his having purportedly debased two black students he&#8217;d never laid eyes on by calling them &#8220;spooks.&#8221; To the best of my knowledge, no event even remotely like this one blighted Broyard&#8217;s long, successful career at the highest reaches of the world of literary journalism.</p> <p word_count="100">This &#8220;spooks&#8221; event is the initiating incident of &#8220;The Human Stain.&#8221; It is the core of the book. There is no novel without it. There is no Coleman Silk without it. Every last thing we learn about Coleman Silk over the course of three hundred and sixty-one pages begins with his unwarranted persecution for having uttered &#8220;spooks&#8221; aloud in a college classroom. In that one word, spoken by him altogether innocently, lies the source of Silk&#8217;s anger, his anguish, and his downfall. His heinous, needless persecution stems from that alone, as do his futile attempts at renewal and regeneration.</p> <a class="tny-slot" name="/3" data-total-words="843"></a><div class="content-ad-wrapper"><div class="advertisement"><div id="yrailBottom300x250_frame" class="displayAd displayAd300x250Js" data-cb-ad-id="yrailBottom300x250_frame"></div><div id="yrailBottom320x252_frame" class="displayAd displayAd320x252Js" data-cb-ad-id="yrailBottom300x250_frame"></div></div></div><a class="tny-page" name="/2" data-total-words="843"></a><p word_count="64">All too ironically, that and <i>not</i> his enormous lifelong secret&#8212;he is the light-skinned offspring of a respectable black family from East Orange, New Jersey, one of the three children of a railroad dining-car porter and a registered nurse, who successfully passes himself off as white from the moment he enters the U.S. Navy at nineteen&#8212;is the cause of his humiliating demise. </p> <p word_count="71">As for Anatole Broyard, was he ever in the Navy? The Army? Prison? Graduate school? The Communist Party? Did he have children? Had he ever been the innocent victim of institutional harassment? I had no idea. He and I barely knew each other. Over more than three decades, I ran into him, casually and inadvertently, maybe three or four times before a protracted battle with prostate cancer ended his life, in 1990. </p> <p word_count="132">Coleman Silk, on the other hand, is killed malevolently, murdered in a planned, prearranged car crash while driving with his unlikely mistress, Faunia Farley, a local farmhand and lowly janitor in the very college where he has been a highly esteemed dean. The revelations that flow from the specific circumstances of Silk&#8217;s murder stun his survivors and lead to the novel&#8217;s ominous conclusion on a desolate, iced-over lake where a showdown of sorts occurs between Nathan Zuckerman and Faunia and Coleman&#8217;s executioner, Faunia&#8217;s ex-husband, the tormented, violent Vietnam vet Les Farley. Neither Silk&#8217;s survivors nor his murderer nor his janitor mistress found their source anywhere other than in my imagination. In Anatole Broyard&#8217;s biography there were no comparable people or events as far as I knew. </p> <p word_count="99">I knew nothing of Anatole Broyard&#8217;s mistresses or, if he ever had any, who they were or if a woman like Faunia Farley, injured and harassed by men from the age of four, had ever come along to help savagely seal his ghastly fate as she does Coleman Silk&#8217;s and her own. I knew nothing at all of Broyard&#8217;s private life&#8212;of his family, parents, siblings, relatives, education, friendships, marriage, love affairs&#8212;and yet the most delicately private aspects of Coleman Silk&#8217;s private life constitute practically all of the story narrated in &#8220;The Human Stain.&#8221;</p> <p word_count="79">I&#8217;ve never known, spoken to, or, to my knowledge, been in the company of a single member of Broyard&#8217;s family. I did not even know whether he had children. The decision to have children with a white woman and possibly be exposed as a black man by the pigmentation of his offspring is a cause of much apprehension for Coleman Silk. Whether Broyard suffered such apprehension I had no way of knowing, and I still have none. </p> <p word_count="247">I never took a meal with Broyard, never went with him to a bar or a ballgame or a dinner party or a restaurant, never saw him at a party I might have attended back in the sixties when I was living in Manhattan and on rare occasions socialized at a party. I never watched a movie or played cards with him or showed up at a single literary event with him as either a participant or a spectator. As far as I know, we did not live anywhere in the vicinity of each other during the ten or so years in the late fifties and the sixties when I was living and writing in New York and he was a book reviewer and cultural critic for the New York <i>Times</i>. I never ran into him accidentally in the street, though once&#8212;as best I can remember, in the nineteen-eighties&#8212;we did come upon each other in the Madison Avenue men&#8217;s store Paul Stuart, where I was purchasing shoes for myself. Since Broyard was by this time the <em>Times</em>&#8217;<em>s</em> most intellectually stylish book reviewer, I told him that I would like to have him sit down in the chair beside me and allow me to buy him a pair of shoes, hoping thereby, I forthrightly admitted, to deepen his appreciation for my next book. It was a playful, amusing encounter, it lasted ten minutes at most, and was the only such encounter we ever had. </p> <p word_count="140">We never bothered to have a serious conversation. Badinage in passing was our specialty, with the result that I never learned from Broyard who were his friends or his enemies, did not know where or when he had been born and raised, knew nothing about his economic status in childhood or as an adult, knew nothing of his politics or his favorite sports teams or if he had any interest in sports at all. I did not even know where he was presently living on that day when I offered to buy him an expensive pair of shoes. I knew nothing about his mental health or his physical well-being, and I only learned he was dying of cancer many months after he&#8217;d been diagnosed, when he wrote about his struggle with the disease in the New York <em>Times Magazine</em>.</p> <a class="tny-slot" name="/4" data-total-words="1675"></a><p word_count="203">I had never been a guest in his house or he in mine, I knew him only as&#8212;unlike Coleman Silk, a revolutionary dean at Athena College in western Massachusetts, where he is the center of controversy over standard college matters like the curriculum and requirements for tenure&#8212;a generally generous reviewer of my books. Yet after admiring for its bravery the article about his imminent death, I got Broyard&#8217;s home number from a mutual acquaintance and called him. That was the first and last time I ever spoke to him on the phone. He was charmingly ebullient, astonishingly exuberant, and laughed heartily when I reminded him of us in our prime, tossing a football around on the lifeguard&#8217;s beach in Amagansett in 1958, which was where and when we first met. I was twenty-five then, he thirty-eight. It was a beautiful midsummer day, and I remember that I went up to him on the beach to introduce myself and tell him how much I had enjoyed his brilliant &#8220;What the Cystoscope Said.&#8221; The story had appeared in my last year of college, 1954, in the fourth number of the most sterling of the literary magazines of the era, the mass-market paperback <i>Discovery.</i></p> <a class="tny-page" name="/3" data-total-words="1878"></a><p word_count="61">Soon there were four of us&#8212;newly published writers of about the same age&#8212;bantering together while tossing a football around on the beach. Those twenty minutes throwing the ball around constituted the most intimate involvement Broyard and I ever had and brought to a total of thirty the number of minutes we would ever spend in each other&#8217;s company. </p> <p word_count="68">Before I left the beach that day, someone told me that Broyard was rumored to be an &#8220;octoroon.&#8221; I didn&#8217;t pay much attention or, back in 1958, lend much credence to the attribution. In my experience, octoroon was a word rarely heard beyond the American South. It&#8217;s not impossible that I had to look it up in the dictionary later to be sure of its precise meaning. </p> <p word_count="122">Broyard was actually the offspring of two black parents. I didn&#8217;t know this then, however, or when I began writing &#8220;The Human Stain.&#8221; Yes, someone had once idly told me that the man was the offspring of a quadroon and a black, but that unprovable bit of unlikely hearsay was all of any substance that I ever knew about Broyard&#8212;that and what he wrote in his books and articles about literature and the literary temper of his time. In the two excellent short stories Broyard published in <i>Discovery</i>&#8212;the other, &#8220;Sunday Dinner in Brooklyn,&#8221; appeared in 1953&#8212;there was no reason not to believe that the central character and his Brooklyn family were, like the author, a hundred per cent white. </p> <p word_count="68">On the other hand, over the years, not a few people had wondered if, because of certain seemingly Negroid features&#8212;his lips, his hair, his skin tone&#8212;Mel Tumin, who was adamantly Jewish in the overwhelmingly Waspy Princeton of his era, might not be an African-American passing for white. This was another fact of Mel Tumin&#8217;s biography that fed into my early imaginings of &#8220;The Human Stain.&#8221;</p> <p word_count="140">My protagonist, the academic Coleman Silk, and the real writer Anatole Broyard first passed themselves off as white men in the years before the civil-rights movement began to change the nature of being black in America. Those who chose to pass (this word, by the way, doesn&#8217;t appear in &#8220;The Human Stain&#8221;) imagined that they would not have to share in the deprivations, humiliations, insults, injuries, and injustices that would be more than likely to come their way should they leave their identities exactly as they&#8217;d found them. During the first half of the twentieth century, there wasn&#8217;t just Anatole Broyard alone&#8212;there were thousands, probably tens of thousands, of light-skinned men and women who decided to escape the rigors of institutionalized segregation and the ugliness of Jim Crow by burying for good their original black lives.</p> <p word_count="122">I had no idea what it was like for Anatole Broyard to flee from his blackness because I knew nothing about Anatole Broyard&#8217;s blackness, or, for that matter, his whiteness. But I knew everything about Coleman Silk because I had invented him from scratch, just as in the five-year period before the 2000 publication of &#8220;The Human Stain&#8221; I had invented the puppeteer Mickey Sabbath of &#8220;Sabbath&#8217;s Theater&#8221; (1995), the glove manufacturer Swede Levov of &#8220;American Pastoral&#8221; (1997), and the brothers Ringold in &#8220;I Married a Communist&#8221; (1998), one a high-school English teacher and the other a star of radio in its heyday. Neither before nor after writing these books was I a puppeteer, a glove manufacturer, a high-school teacher, or a radio star.</p> <a class="tny-slot" name="/5" data-total-words="2459"></a><p word_count="81">Finally, to be inspired to write an entire book about a man&#8217;s life, you must have considerable interest in the man&#8217;s life, and, to put it candidly, though I particularly admired the story &#8220;What the Cystoscope Said&#8221; when it appeared in 1954, and I told the author as much, over the years I otherwise had no particular interest in Anatole Broyard. Neither Broyard nor anyone associated with Broyard had anything to do with my imagining anything in &#8220;The Human Stain.&#8221; </p> <p word_count="138">Novel writing is for the novelist a game of let&#8217;s pretend. Like most every other novelist I know, once I had what Henry James called &#8220;the germ&#8221;&#8212;in this case, Mel Tumin&#8217;s story of muddleheadedness at Princeton&#8212;I proceeded to pretend and to invent Faunia Farley; Les Farley; Coleman Silk; Coleman&#8217;s family background; the girlfriends of his youth; his brief professional career as a boxer; the college where he rises to be a dean; his colleagues both hostile and sympathetic; his field of study; his bedeviled wife; his children both hostile and sympathetic; his schoolteacher sister, Ernestine, who is his strongest judge at the conclusion of the book; his angry, disapproving brother; and five thousand more of those biographical bits and pieces that taken together form the fictional character at the center of a novel.</p> <p word_count="1">Sincerely,</p> <p word_count="2">Philip Roth</p> <p word_count="4"><em>Illustration by Andy Friedman.</em></p>
+
+
+
+
+    <nav class="social-buttons"><ul><li class="fb-btn"><div class="fb-share-button" data-href="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" data-type="button"></div></li>
+<li class="twitter-btn"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" data-text="An Open Letter to Wikipedia" data-via="newyorker" data-dnt="true"></a></li>
+<li class="gplus-btn"><div class="g-plusone" data-annotation="none" data-size="medium" data-href="http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia"></div></li>
+<li class="share-email"><a href="mailto:?subject=From%20newyorker.com: An%20Open%20Letter%20to%20Wikipedia&amp;body=  Dear Wikipedia,  I am Philip Roth. I had reason recently to read for the first time the Wikipedia entry discussing my novel &#8220;The Human Stain.&#8221; The entry contains a serious misstatement that I would like to ask to have removed. This item entered Wikipedia...%0A%0AContinue reading at http://www.newyorker.com/books/page-turner/an-open-letter-to-wikipedia" title="Email"><img src="/wp-content/assets/dist/img/icon/email.png" alt="Email"/></a></li>
+<li class="share-print"><a href="javascript:window.print();"><img src="/wp-content/assets/dist/img/icon/printer.png" alt="Print"/></a></li>
+</ul></nav></nav>
+					</div>
+					<section class="article-contributors">
+
+<section class="author-details" itemscope itemtype="http://schema.org/Person">
+	<meta itemprop="name" content="Philip Roth">
+	<meta itemprop="url" content="http://www.newyorker.com/contributors/philip-roth">
+	<meta itemprop="image" content="">
+
+	<article class="">
+				<div class="author-masthead">
+			<p><strong>Philip Roth</strong>&nbsp;</p>
+		</div>
+		<ul class="author-links">
+					<li>
+				<a class="light-button" href="http://www.newyorker.com/contributors/philip-roth/all" title="Philip Roth">All work</a>
+			</li>
+											</ul>
+	</article>
+</section>
+<div class="author-ampersand">&amp;</div>
+					</section>
+				</div>
+
+<aside class="container-rail">
+
+  <section id="newsletter-signup">
+    <h5 class="popping">Sign up to get the best of The New Yorker delivered to your inbox every day</h5>
+    	<div class="newsletterContainer">
+	      <form action="/wp-admin/admin-ajax.php" method="post" name="newsletter-form" id="newsletter-form" novalidate="novalidate" class="newsletter-signup-form">
+	      <input type="hidden" name="action" value="newsletter_subscribe">
+	      <input type="hidden" name="formName" value="newsletter-form">
+	      <input type="hidden" name="url" value="http://www.newyorker.com"><input type="hidden" name="source_code" value="footer-unit">    <fieldset>
+	          <legend><h5>Sign up for our newsletter</h5></legend>
+	          <label for="newsletter-email" class="replace">E-mail address</label>
+	          <input name="email" id="newsletter-email" type="email" placeholder="E-mail address" required="" class="">
+	          <button type="submit" name="submit-newsletter" id="submit-newsletter-content">Sign up</button>
+	      </fieldset>
+	      <div class="form_response"></div>
+	          <ul class="subscribe-ids">
+	              <li>
+
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_217" name="newsletterId[]" value="217" checked="checked">
+	                      <label for="newsletterId_217"></label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_442" name="newsletterId[]" value="442">
+	                      <label for="newsletterId_442"></label>
+	                  </fieldset>
+	              </li>
+	              <li>
+	                  <fieldset class="row newsletter checkbox">
+	                      <input type="checkbox" id="newsletterId_5129" name="newsletterId[]" value="5129">
+	                      <label for="newsletterId_5129"></label>
+	                  </fieldset>
+	              </li>
+	          </ul>
+	      </form>
+		    <span class="newsletter-message"></span>
+      </div>
+  </section>
+	<div class="recirculation">
+		<div class="tablet-half-wrapper">
+			<div id="most-popular-polar-text"></div>
+			<div class="clearfix"></div>
+	    </div> <!-- // div.tablet-left-wrapper -->
+
+		<div class="tablet-half-wrapper recirc-most-popular-wrapper">
+			<span class="post-load-module" data-name="most-popular" data-cache="10m" data-views="all"></span>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</aside>
+			</div>
+		</article>
+		<section class="module">
+	<div id="you-might-like" class="big-titled-curation" style="display: none;">
+		<h5 class="popping">You Might Like</h5>
+		<div id="yml-list" class="stories"></div>
+	</div>
+</section>
+	</div>
+	<aside id="footer-ad-google"><div class="ad" data-lazyad data-matchmedia="only screen and (min-width: 850px)"><script type="text/lazyad">
+<!--
+<script>  google_ad_client = 'ca-conde_newyorker';  google_ad_channel = 'newyorker_standard_a newyorker_standard_b';  google_language = 'en';  google_ad_width = '728';  google_ad_height = '90';  google_ad_format = '728x90_pas_abgc';  google_ad_type = 'text';  google_alternate_ad_url = '';  google_alternate_color = '';  google_color_bg = 'edefee';  google_color_border = '';  google_color_line = '000000';  google_color_url = '000000';  google_color_link = '000000';  google_color_text = '000000';  google_encoding = 'utf8';  google_safe = 'high';  google_adtest = 'off';  google_ad_section = 'default';</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div>
+-->
+</script>
+</aside>
+<span class="post-load-module" data-name="promotions" data-cache="48h" data-views="desktop"></span>
+<span class="post-load-module" data-name="strongbox" data-cache="48h" data-views="desktop"></span>
+
+
+		<div id="digital-editions"><div id="AMS_NYR_GLOBAL_FOOTER" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" data-mobile="http://www.newyorker.com/go/mobilefailsafe" target="_blank"><img src="/wp-content/assets/dist/img/px.gif" class="ecom-responsive" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_Desktop_1020x180.jpg" data-src-tablet="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Footer_TabletRedesign_728x128.jpg" data-src-mobile="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Mobile_300x50.NavyTote.jpg" alt="Subscribe to The New Yorker" /></a></div></div>		<footer>
+			<nav id="tny-footer">
+			  <ul>
+				<li><a href="/about/us/?src=tny-footer" title="About Us">About Us</a></li>
+				<li><a href="/about/faq/?src=tny-footer" title="Frequently Asked Questions">FAQ</a></li>
+				<li><a href="http://w1.buysub.com/servlet/CSGateway?cds_mag_code=NYR" title="Customer Care">Customer Care</a></li>
+				<li><a href="http://www.condenaststore.com/~/cartoon-bank?utm_medium=referral&amp;utm_source=NewYorker&ampt;utm_content=tcb-footer&amp;AID=1247905545" title="">Cartoon Bank</a></li>
+				<li><a href="http://www.newyorkeronthetown.com/?src=tny-footer" title="">On The Town</a></li>
+				<li><a href="/about/feeds/?src=tny-footer" title="">RSS</a></li>
+				<li><a href="/about/contact/?src=tny-footer" title="">Contact Us</a></li>
+			  </ul>
+			  <ul>
+		    	<li><a href="http://www.condenaststore.com/-se/newyorkerstore.htm?utm_medium=referral&amp;utm_source=NewYorker&amp;utm_content=tny-footer&amp;AID=1247905545" title="">The New Yorker Store</a></li>
+			    <li><a href="http://www.condenast.com/careers?src=tny-footer" title="">Careers</a></li>
+			    <li><a href="http://www.condenast.com/reprints-permissions?src=tny-footer" title="">Reprints/Permissions</a></li>
+			    <li><a href="/about/press/?src=tny-footer" title="Press Center">Press</a></li>
+			    <li><a href="http://www.condenast.com/brands/new-yorker/media-kit/?src=tny-footer" title="">The New Yorker Media Kit</a></li>
+			  </ul>
+			</nav>
+			<div id="conde-footer">
+  <div class="global-footer-logo">
+    <a href="http://www.condenast.com?src=tny-footer" title="Cond&eacute; Nast Digital">Cond&eacute; Nast Digital</a>
+  </div>
+  <div class="global-footer-subscriptions">
+      <form action="/" name="sub_dropmenus" id="sub_dropmenus">
+        <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="sub_list" id="sub_list" size="1">
+            <option selected="selected" value="">Subscribe to a magazine</option>
+            <option value="">
+            </option><option value="http://www.magazinestoresubscriptions.com?src=univdropdown">View All Titles</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Allure?src=tny-footer">Allure</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_ArchitecturalDigest?src=tny-footer">Architectural Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_BonAppetite?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Brides?src=tny-footer">Brides</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_CondeNastTraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Details?src=tny-footer">Details</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Glamour?src=tny-footer">Glamour</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfDigest?src=tny-footer">Golf Digest</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GolfWorld?src=tny-footer">Golf World</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_GQ?src=tny-footer">GQ</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Lucky?src=tny-footer">Lucky</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Self?src=tny-footer">Self</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_TeenVogue?src=tny-footer">Teen Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_NewYorker?src=tny-footer">The New Yorker</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_VanityFair?src=tny-footer">Vanity Fair</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Vogue?src=tny-footer">Vogue</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_W?src=tny-footer">W</option>
+            <option value="https://www.magazinestoresubscriptions.com/webapp/wcs/stores/servlet/Subscriptions_Wired?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div class="global-footer-sister-sites">
+      <form action="/" name="mag_dropmenus" id="mag_dropmenus">
+          <select onchange="(this.options[this.selectedIndex].value) ? window.open(this.options[this.selectedIndex].value) : null" name="mag_list" id="mag_list">
+            <option selected="selected" value="">Other Cond&eacute; Nast sites</option>
+            <option value="">- - - - - - - - - - - - - -</option>
+            <option value="http://www.allure.com?src=tny-footer">Allure</option>
+            <option value="http://www.architecturaldigest.com?src=tny-footer">Architectural Digest</option>
+            <option value="http://www.arstechnica.com?src=tny-footer">Ars Technica</option>
+            <option value="http://www.bonappetit.com?src=tny-footer">Bon App&eacute;tit</option>
+            <option value="http://www.brides.com?src=tny-footer">Brides.com</option>
+            <option value="http://www.concierge.com/cntraveler?src=tny-footer">Cond&eacute; Nast Traveler</option>
+            <option value="http://www.concierge.com?src=tny-footer">Concierge</option>
+            <option value="http://www.details.com?src=tny-footer">Details</option>
+            <option value="http://www.epicurious.com?src=tny-footer">Epicurious</option>
+            <option value="http://www.glamour.com?src=tny-footer">Glamour</option>
+            <option value="http://www.golfdigest.com?src=tny-footer">Golf Digest</option>
+            <option value="http://www.golfworld.com?src=tny-footer">Golf World</option>
+            <option value="http://www.gq.com?src=tny-footer">GQ</option>
+            <option value="http://www.hotelchatter.com?src=tny-footer">Hotel Chatter</option>
+            <option value="http://www.jaunted.com?src=tny-footer">Jaunted</option>
+            <option value="http://www.luckymag.com?src=tny-footer">Lucky</option>
+            <option value="http://www.nutritiondata.com?src=tny-footer">NutritionData</option>
+            <option value="http://www.reddit.com?src=tny-footer">Reddit</option>
+            <option value="http://thescene.com?src=tny-footer">The Scene</option>
+            <option value="http://www.self.com?src=tny-footer">Self</option>
+            <option value="http://www.style.com?src=tny-footer">Style</option>
+            <option value="http://www.teenvogue.com?src=tny-footer">Teen Vogue</option>
+            <option value="http://www.vanityfair.com?src=tny-footer">Vanity Fair</option>
+            <option value="http://www.vegaschatter.com?src=tny-footer">Vegas Chatter</option>
+            <option value="http://www.vogue.com?src=tny-footer">Vogue</option>
+            <option value="http://www.wmagazine.com?src=tny-footer">W</option>
+            <option value="http://www.wired.com?src=tny-footer">Wired</option>
+          </select>
+      </form>
+  </div>
+  <div id="copy">
+  	<p><small>Use of this site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy">User Agreement</a> (effective January 1, 2014) and <a href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (effective January 1, 2014). <a href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a> The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Cond&eacute; Nast. <a href="http://www.condenast.com/privacy-policy#privacypolicy-optout">Ad Choices&nbsp;<img width="10" height="10" src="/wp-content/assets/dist/img/icon/ad_choices_arrow.png" alt="Ad Choices"></a></small></p>
+  </div>
+</div>
+		</footer>
+	</div> <!-- end .content-wrapper -->
+</div> <!-- end .page-container -->
+	<div id="CMU_RIGHTRAIL_CONTAINER">
+  <div id="AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" class="ecom-placement"><a href="http://www.newyorker.com/go/failsafe" target="_blank"><img src="/wp-content/assets/dist/img/px.gif" data-src-desktop="/wp-content/assets/dist/img/cn-ecom/failsafe/NYR_Search_Tablet_300x250.jpg" alt="Subscribe to The New Yorker" /></a></div></div>
+	<script>  var CN = CN || {};  /* <![CDATA[ */  var platformEnvironment = "production";  var sitehost = "http://www.newyorker.com";  var omniture_init = [];  CN.omniture = CN.omniture || {}; CN.omniture.conf = {"s_account":"conde-newyorker","server":"stats2.newyorker.com","secureServer":"sstats.newyorker.com","internalFilters":"javascript:,newyorker.com,advancemags.com"};  /* ]]> */</script>
+<script src="/wp-content/assets/dist/js/jquery.min.js?cb=20150402205438"></script>
+<script src="/wp-content/assets/dist/js/head.min.js?cb=20150402205438"></script>
+<script src="/ads/js/cn.dart.bun.min.js?cb=20150402205438"></script>
+<script>var TNY = TNY || {}; TNY.Stats = TNY.Stats || {}; TNY.Stats.omniture = TNY.Stats.omniture || {}; TNY.Stats.omniture._conditions = TNY.Stats.omniture._conditions || {contentId: "1982581", cnUserServices: "true", templateName: "Article", keywordsList: "page-turner|anatole-broyard-tag|philip-roth-tag|the-human-stain-tag-2|article|channel_books", deviceViewCallback: jQuery.devices.getDeviceView(), isSingular: true, setContentId: "1982581", isPost: true, setAuthorName: "Philip Roth", isPostOrArticle: true, dateTimePublished: "2012-09-06 13:53:24", dateTimeSince: "22519h|938d", id: "1982581", contributor: "Philip Roth", hero: "Eustace Tilley"}</script>
+<noscript>
+<a href="http://www.omniture.com" title="Web Analytics"><img src="http://condenast.112.2o7.net/b/ss/conde-newyorker/1/H.15.1--NS/0" height="1" width="1" border="0" alt="" /></a>
+</noscript>
+<script>/*Get the in Site Catalyst object instance. This is done by using the s_account variable or similar*/var _scObj = s_gi(CN.omniture.conf.s_account);/* create instance of DIL*/var scDil = DIL.create({  partner : "condenast",  uuidCookie:{     name:'aam_uuid',     days:30   }  });/*Pass the dil Instance and SC instance to this module*/DIL.modules.siteCatalyst.init(_scObj, scDil);</script>            <script type="text/javascript" class="site_init">
+            //<!--
+                CN.site.init({
+                    code:             'NYR',
+                    title:            'The New Yorker',
+                    name:             'newyorker',
+                    alias:            'newyorker.com',
+                    domain:           'newyorker.com',
+                    tld:              'newyorker.com',
+                    baseUrl:          'http://www.newyorker.com',
+                    mobilecompatible: 'true',
+                    httpStatusCode:    200,
+            userServiceUrl: 'http://user-service.condenast.com',
+userServiceKey: 'xTqYrbfganJDRIpQjk9DyPG76bQ=',
+ecomUrl: 'https://subscribe.newyorker.com/api/circ/xml/Transaction',
+socialRes: 'http://www.newyorker.com/services/livefyre/userToken',
+                    env: 'PROD'  // Put something consistent last so we don't have a trailing comma (appease IE)
+                });
+
+                CN.isMobile = TNY.initIsMobile;
+                CN.isTablet = jQuery.devices.tablet();
+                CN.checkDeviceView = jQuery.devices.checkDeviceView;
+            //-->
+            </script>
+                            <!-- AD INIT: CN.dart.init version 2 -->
+                <script type="text/javascript">
+                //<!--
+                    CN.dartKwsArray = [ "dphiffer","page_turner","anatole_broyard_tag","philip_roth_tag","the_human_stain_tag_2","books","an_open_letter_to_wikipedia","article","channel_books" ];
+
+
+                if(TNY.meterVar == undefined){ TNY.meterVar = { 'meter_name' : '', 'meter_count' : '', 'meter_max' : '', 'meter_viewed' : '', 'num' : '', 'pid' : '', 'entitlement'  : '' } } if(TNY.meterVar != undefined){  if( TNY.meterVar.isBarrierHalf ){ CN.dartKwsArray.push('novideo'); }  if( TNY.meterVar.isBarrierFull ){ CN.dartKwsArray.push('noads'); } }
+                    CN.dart.init({
+                        adUnits: {
+                            unit1: CN.isMobile ? 'newyorker.mobile.dart' : 'newyorker.dart',
+                            unit2: 'books',
+                            unit3: 'page-turner',
+                            unit4: ''
+                        },
+                        kws: CN.dartKwsArray,
+                        contentType: 'Article',
+                                            charmap : {' ' : '+', '-' : '_'}
+                    });
+                                //-->
+                    </script>
+                            <!-- CM: page-ads.js -->
+            <script type="text/javascript">
+            //<!--
+                var _ghearst_vars = (function() {
+                    var commonParams = 'ad_category_prefix=books'
+                                        + '&amp;browser_path=%2Fbooks%2Fpage-turner%2Fan-open-letter-to-wikipedia'
+                                        + '&amp;cat_prefixes=%2Cbooks%2Cpage-turner%2Can-open-letter-to-wikipedia'
+                                        + '&amp;site_prefix=newyorker'
+                                        + '&amp;subdomain=mprod'
+                                        + '&amp;url_name=an-open-letter-to-wikipedia';
+
+                                var metaKeyWords = (function() {
+                        var
+                            i                  = 0,
+                            metaKeywordContent = '',
+                            nameAttribute      = null,
+                            metaCollection     = document.getElementsByTagName('meta');
+
+                        for (i=0;i<metaCollection.length;i++) {
+                            nameAttribute = metaCollection[i].name.search(/keywords/);
+                            if (nameAttribute!= -1) {
+                                metaKeywordContent = metaCollection[i].content;
+                                metaKeywordContent = metaKeywordContent.replace(/,/g,'%2C'); // to replace ,
+                                metaKeywordContent = metaKeywordContent.replace(/ /g,''); // to replace space
+                            }
+                        }
+                        return encodeURIComponent(metaKeywordContent);
+                    })();
+
+                    var deviceParams = (function() {
+                                                    if ( CN.checkDeviceView('desktop') ) {
+                                    return 'AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_GLOBAL_HEADER%2CAMS_NYR_GLOBAL_HEADERCALLOUT%2CAMS_NYR_GLOBAL_NAVBAR%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER%2CAMS_NYR_GLOBAL_NAVBAR_STICKY%2CAMS_NYR_GLOBAL_NAVBAR_ROLLOVER_STICKY';
+                                }
+                                                                if ( CN.checkDeviceView('tablet') ) {
+                                    return 'AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_TABLET_GLOBAL_SUBNAV';
+                                }
+                                                                if ( CN.checkDeviceView('mobile') ) {
+                                    return 'AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A%2CAMS_NYR_GLOBAL_FOOTER%2CAMS_NYR_MOBILE_GLOBAL_SUBNAV';
+                                }
+                                                    })();
+
+            if(TNY.meterVar != undefined){  if(TNY.meterVar.isBarrierHalf) {    TNY.barrierStatus = "half";  } else if(TNY.meterVar.isBarrierFull) {    TNY.barrierStatus = "full";  }  TNY.checkIfBarrierIsShown = function(){      paywallCMU = "%2CAMS_NYR_PAYWALL_FULL_WIDTH_BARRIER%2CAMS_NYR_PAYWALL_BARRIER";    deviceParams = deviceParams + paywallCMU;  };  TNY.addBarrierState = function(){    deviceParams = deviceParams + "&article_count=" + TNY.barrierStatus;    TNY.deviceParams = deviceParams;  };  if(TNY.barrierStatus != undefined){    TNY.checkIfBarrierIsShown();    TNY.addBarrierState();  } }
+                    return {
+                        'ams_ads_script_src' : 'https://subscribe.newyorker.com/ams/page-ads.js?'
+                                                + commonParams + ''
+                                                + '&amp;keywords=' + metaKeyWords + ''
+                                                + '&amp;position_list=' + deviceParams + ''
+                    };
+                })();
+
+                if (!window.$h) {window.$h = {}}
+                (function(){
+                    if (!$h.util) {
+                        $h.util = {
+                            buildScriptTag: function(src){
+                                if (!!src){ document.write('<scr' + 'ipt src="'+src+'" type="text/javascript"></scr' + 'ipt>');}
+                            }
+                        }
+                    }
+                    $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+                })();
+            //-->
+            </script>
+            <script>var digitalData = {  "pageType": s.prop5,  "section": s.prop6,  "canonical": s.pageName,  "tags": s.prop50};</script><script src="//assets.adobedtm.com/6372cf21ef88ee60bc2977a4898dcb5c7945a212/satelliteLib-9cb2a39d627a819b6ca42ab76f651dbfa7b1a535.js"></script>
+    <script src="/wp-content/assets/dist/js/stats.min.js?cb=20150402205438"></script>
+    <script src="/wp-content/assets/dist/js/core.min.js?cb=20150402205438"></script>
+   <script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x252" : "300x250" ), kws: [ "2ndBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x251" : "300x250" ), kws: [ "topBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x252" : "300x250" ), kws: [ "2ndBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x251" : "300x250" ), kws: [ "topBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( ! CN.isMobile && CN.dart ) {
+ CN.dart.call( "header", { sz: "728x90", kws: [ "top" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.isMobile && CN.dart ) {
+ CN.dart.call( "header_mobile", { sz: ( "320x50" ), kws: [ "top" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x252" : "300x250" ), kws: [ "2ndBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x251" : "300x250" ), kws: [ "topBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x252" : "300x250" ), kws: [ "2ndBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x251" : "300x250" ), kws: [ "topBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailBottom", { sz: ( CN.isMobile ? "320x252" : "300x250" ), kws: [ "2ndBox" ], collapse: true } );
+}
+}</script><script type="text/javascript">if ( typeof CN !== "undefined" ) {
+if ( CN.dart ) {
+ CN.dart.call( "yrailTop", { sz: ( CN.isMobile ? "320x251" : "300x250" ), kws: [ "topBox" ], collapse: true } );
+}
+}</script>            <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_MOBILE_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_MOBILE_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_MOBILE_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV != 'undefined' ) {
+  jQuery( "#AMS_NYR_TABLET_GLOBAL_SUBNAV" ).html( pageAds.AMS_NYR_TABLET_GLOBAL_SUBNAV.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_TABLET_GLOBAL_SUBNAV not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).html( pageAds.AMS_NYR_GLOBAL_HEADER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).html( pageAds.AMS_NYR_GLOBAL_HEADERCALLOUT.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_HEADERCALLOUT" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_HEADERCALLOUT not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_NAVBAR_ROLLOVER" ).html( pageAds.AMS_NYR_GLOBAL_NAVBAR_ROLLOVER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds."); }
+}
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for tablet */
+/* AMS_NYR_GLOBAL_NAVBAR_ROLLOVER not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    /* AMS_NYR_POPUP_FLOATINGAD not in pageAds for desktop */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for tablet */
+/* AMS_NYR_POPUP_FLOATINGAD not in pageAds for mobile */
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_GLOBAL_FOOTER != 'undefined' ) {
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).html( pageAds.AMS_NYR_GLOBAL_FOOTER.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_GLOBAL_FOOTER" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_GLOBAL_FOOTER not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+                        <script type="text/javascript">
+            //<!--
+                if ( ( typeof pageAds != 'undefined') && ( CN.url.params( 'nojoy' ) != 1 ) ) {
+                                    (function(){
+                    if ( CN.checkDeviceView('desktop') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('tablet') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+if ( CN.checkDeviceView('mobile') ) {
+if ( typeof pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A != 'undefined' ) {
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).html( pageAds.AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A.replace( /document.write\(.*\)/gi, "/* filtered by amg-magnet:document.write(...) */" ) );
+  jQuery( "#AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A" ).css( { visibility: 'visible' } );
+} else { CN.debug.info( "AMS_NYR_ARTICLE_BLOG_RIGHTRAIL_A not in pageAds."); }
+}
+                    })();
+                                }
+            //-->
+            </script>
+             <script>!function(d,s,id){ var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>(function() { var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;po.src = "//apis.google.com/js/plusone.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);})();</script>
+<script> (function() { if (window.localStorage) { if (localStorage.getItem("share-selection")==="true") { var po = document.createElement("script"); po.async = true;po.src = "/wp-content/assets/js/social/share-selection.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s); }}  })();</script>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+                <script type="text/javascript">
+                CN.popups = CN.popups || {};
+                CN.popups.setCookieLife(48);
+                CN.popups.setExiting(false, {
+                    path: '/exit-pop/',
+                    width: 460,
+                    height: 295,
+                }).excludeExitPath( '/wp-admin', '/wp-login.php' ).excludeExitDomain("newyorker.com","www.newyorker.com","origin.www.newyorker.com");
+                CN.popups.setATGArriving(false).setATGLayer(false).setATGExiting(false);
+
+                        CN.popups.setLayer(false).setArriving(false);
+                CN.popups.init();
+                    </script>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="newyorker.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+            <script type="text/javascript">
+            //<!--
+                CN.config.set({
+                    title        : document.title,
+                                    facebook     : {pageid: "9258148868"},
+                                    isiFrame     : true
+                });
+            //-->
+            </script>
+            <!--[if IE]>
+<style>
+<script src="/wp-content/assets/js/vendors/simplemodal/simplemodal.min.js"></script>
+#link-subscription-modal{
+  display:none;
+}
+
+#modal-overlay-full{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width:0;
+  height:0;
+  display:none;
+}
+.nyr-flex-modal{
+  display:block;
+}
+</style>
+<![endif]-->
+<div id="modal-overlay-full">
+    <div id="conf-view" class="hidden-m-item nyr-flex-modal"></div>
+    <div id="signin-view" class="hidden-m-item nyr-flex-modal"></div>
+    <div id="reg-view" class="hidden-m-item nyr-flex-modal"></div>
+    <div id="link-subscription-modal" class="hidden-m-item nyr-flex-modal"></div>
+</div>
+<div class="small-flex-spacer-b"></div>
+<div id="CM-notification" class="fancy modal barrier-type" aria-hidden="false">
+    <div class="CM-wrapper">
+        <div id="close-b-modal" class="modal-close notification-b"></div>
+        <div id="CM-nofication-home-link"></div>
+        <div id="CM-nofication-home-line"></div>
+        <div id="PAYWALL_BARRIER_wrapper"></div>
+        <div class="bottom-barrier-divide">
+            <div class="notification-pipe-spacer"></div>
+            <div class="mobile-bottom-barrier-divide-left"><a id="linksub-from-external" href="javascript:void(0)">Link your <br/> subscription</a>
+            </div>
+            <div class="bottom-barrier-divide-left"><a id="linksub-from-external-promo" href="javascript:void(0)">Link your subscription</a>
+            </div>
+        </div>
+        <div class="mobile-barrier-divide-right begin-notification-msg">Have a login?
+            <br/>
+            <span><a id="sign-in-from-notfication-mob" href="javascript:void(0)">Sign In</a></span>
+        </div>
+        <div id="login-text-wrapper" class="bottom-barrier-divide-right">Already have a login?
+            <span><a id="sign-in-from-notfication" href="javascript:void(0)">Sign in</a></span>
+        </div>
+        <div class="mob-notification-container">
+                    <div class="mob-notification-item"><a class="linksub-from-external-mobi" href="javascript:void(0)" style="text-decoration:underline">Link Your<br/>Subscription</a></div>
+                    <div class="mob-notification-item pipe-spacer-image"></div>
+                    <div id="mobile-login-text-wrap" class="mob-notification-item">Have a login?
+                        <br/><a class="signin-from-external-mobi" id="sign-in-from-notfication-mobilink" href="javascript:void(0)" style="text-decoration:underline">Sign in</a></div>
+                </div>
+    </div>
+</div>
+		<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2907deeb56","applicationID":"4337305","transactionName":"YlIEZhNSXxEAABYNW1sYJ1EVWl4MThALClNZUktCDkBF","queueTime":0,"applicationTime":332,"atts":"ThUHEFtITB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>

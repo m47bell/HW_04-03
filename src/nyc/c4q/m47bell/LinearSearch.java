@@ -30,7 +30,6 @@ public class LinearSearch {
             return -1;
         }
 
-
     }
 
     public static void main(String[] args) {
@@ -43,8 +42,6 @@ public class LinearSearch {
         alist.add(1);
         alist.add(2);
         alist.add(99);
-
-
 
         Scanner input= new Scanner(System.in);
 
