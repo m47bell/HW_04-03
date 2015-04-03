@@ -1,75 +1,82 @@
 package nyc.c4q.m47bell;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
 /**
- * Created by c4q-marbella on 4/1/15.
  * Access Code 2-1
  * Marbella Vidals
  * Write a class called WebPageSanitizer which implements a static method called String sanitize(String html)
  * which removes all script tags and the information that they encapsulate and returns a sanitized version of
  * the HTML string.
- *
- * Examples of script tags:
-// * <!-- HTML4 and (x)HTML -->
-// <script type="text/javascript" src="javascript.js">
-//
-// <!-- HTML5 -->
-// <script src="javascript.js"></script>
- *
  */
-public class WebPageSanitizer {
 
-    public static String sanitize(String html) {
+//Don't know why HTTP does not work??????
 
-        File unsanitized = new File("/Users/c4q-marbella/Desktop/accesscode/HW_04-03/unsanitizedHTML.txt");
+import java.net.URL;
+import java.util.Scanner;
 
-        try {
-            Scanner sc = new Scanner(unsanitized);
+public class WebPageSanitizer
+{
 
-            String textFile;
+    //receive a html string
+    public static String sanitize(String html)
+    {
+        String startTag = "<script";
+        String endTag = "</script>";
+        String newHtml;
+        int startIndex = html.indexOf(startTag);
+        int endIndex = html.indexOf(endTag);
 
+        //while the file contains <script tag keep reading file
 
-            //Returns true if the iteration has more elements
-            while (sc.hasNext()) {
-                textFile = sc.next();
+        while(html.contains(startTag))
+        {
+            //get the location of script tags via index,set it equal to newHTML
+            newHtml = html.substring(startIndex, endIndex);
 
-                //look for <script tags and don't store script info
-                if (!textFile.startsWith("<script") && (!textFile.endsWith("</script>"))){
-
-
-
-
-
-                }
-
-            }
-
-
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            // remove script tags and replace with ""
+            html = html.replace(newHtml, "");
         }
+        //return html
         return html;
     }
 
-    public static void main(String [] args){
+    public static void main(String[] args)throws Exception
+    {
 
+        //From Alex's HttpTest code
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Url");
+        //for example  http://google.com
+        String input = scanner.nextLine();
 
+        //converts a string to a URL
+        URL url = HTTP.stringToURL(input);
 
+        //gets the html source code
+        String html = HTTP.get(url);
 
-
-
-
-
-
-
+        //call method sanitize and prints out sanitize html
+        System.out.println(sanitize(html));
     }
 
 
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
